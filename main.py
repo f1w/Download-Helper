@@ -16,15 +16,10 @@ def menu():
 
     home_path = str(Path.home() / "Desktop")
 
-
-    os.chdir(dw_path)
-
-    
+    os.chdir(dw_path)  
 
     l = []
-
     dirlist = []
-
 
     for files in os.listdir(dw_path):
         getAfter = os.path.splitext(files)[1]
@@ -70,9 +65,9 @@ def menu():
             pass          
         else:
             getBehind = getBehind.replace(".", "").strip()
-            for sadtimes in dirlist:
-                if getBehind in sadtimes:
-                    os.replace(anotherOne+"\\"+folders, os.getcwd()+"\\"+sadtimes+"\\"+folders)
+            for xn in dirlist:
+                if getBehind in xn:
+                    os.replace(anotherOne+"\\"+folders, os.getcwd()+"\\"+xn+"\\"+folders)
 
             
 
